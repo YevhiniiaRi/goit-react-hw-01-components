@@ -1,0 +1,17 @@
+.status.offline .icon {
+  color: red;
+}
+
+
+.status.online .icon {
+  color: green;
+}
+
+.item {
+    list-style-type: none;
+    padding: 20px;
+    box-shadow: 1px 1px 14px 4px rgba(124, 107, 96, 0.42);
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}

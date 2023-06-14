@@ -1,11 +1,14 @@
 import { Profile } from 'components/Profile/Profile';
 import { Statistics } from 'components/Statistics/Statistics';
+import { FriendList } from './FriendList/FriendList';
 import userInfo from '../data/user.json'
 import dataStatic from '../data/data.json'
+import friendsAr from '../data/friends.json'
+
 
 export const App = () => {
   return (
-    <div>
+    <>
       <Profile
         username={userInfo.username}
         tag={userInfo.tag}
@@ -16,10 +19,11 @@ export const App = () => {
         likes={userInfo.stats.likes}
       />
       <section>
-        
         <Statistics stats={dataStatic} />
       </section>
-    </div>
+
+      <FriendList friends={friendsAr} />
+    </>
   );
 };
 
