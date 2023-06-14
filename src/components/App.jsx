@@ -1,5 +1,7 @@
 import { Profile } from 'components/Profile/Profile';
+import { Statistics } from 'components/Statistics/Statistics';
 import userInfo from '../data/user.json'
+import dataStatic from '../data/data.json'
 
 export const App = () => {
   return (
@@ -13,6 +15,12 @@ export const App = () => {
         views={userInfo.stats.views}
         likes={userInfo.stats.likes}
       />
+      <section>
+        
+        <Statistics stats={dataStatic} />
+      </section>
     </div>
   );
 };
+
+
